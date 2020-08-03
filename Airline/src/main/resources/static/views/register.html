@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Flight</title>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600"
+	rel="stylesheet" type="text/css">
+<link rel="icon" href="Favicon.png">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link href="/css/index.css" rel="stylesheet">
+
+<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-image: url("https://isg-one.com/images/default-source/default-album/sociable-robots-airport.tmb-th1190-446.jpg?sfvrsn=7b97c131_0");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+		<nav class="navbar navbar-expand-md navbar-laravel">
+		<div class="container ">
+			<a class="navbar-brand" href="/">Flight</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link btn btn-aqua  col-lg-12"
+						href="/register">Register</a></li>
+						&nbsp;&nbsp;
+					<li class="nav-item"><a class="nav-link btn btn-aqua col-lg-12"
+						href="/login">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<br>
+
+	<main class="my-form">
+		<div class="container align-center col-sm-8" ng-app="registerApp"
+			ng-controller="registerController">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="card border-light special-card">
+						<div class="card-header border-light text-center">Register To Fly</div>
+						<div class="card-body">
+							<form name="registerForm">
+								<div class="form-group row">
+									<label for="firstName"
+										class="col-md-4 col-form-label text-md-right">Firstname</label>
+									<div class="col-md-4">
+										<input type="text" id="firstName" class="form-control"
+											name="firstName" ng-model="user.firstName">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="lastName"
+										class="col-md-4 col-form-label text-md-right">Lastname</label>
+									<div class="col-sm-4">
+										<input type="text" id="lastName" class="form-control"
+											name="lastName" ng-model="user.lastName">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="mobileNumber"
+										class="col-md-4 col-form-label text-md-right">Contact
+										No'</label>
+									<div class="col-md-4">
+										<input type="text" id="mobileNumber" class="form-control"
+											name="mobileNumber" ng-model="user.mobileNumber">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="gender"
+										class="col-md-4 col-form-label text-md-right">gender </label>
+									<div class="col-md-4">
+										<input type="text" id="gender" class="form-control"
+											name="gender" ng-model="user.gender">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="userName"
+										class="col-md-4 col-form-label text-md-right">Username</label>
+									<div class="col-md-4">
+										<input type="text" id="userName" class="form-control"
+											name="userName" ng-model="user.userName">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="password"
+										class="col-md-4 col-form-label text-md-right">Password
+									</label>
+									<div class="col-md-4">
+										<input type="password" id="password" class="form-control"
+											name="password" ng-model="user.password">
+									</div>
+								</div>
+
+
+								<div class="col-md-4 offset-md-4">
+									<button type="button" class="btn btn-info"
+										ng-click="addUser(user.firstName, user.lastName, user.mobileNumber, user.gender,
+								user.userName,user.password)">
+										Register</button>
+								</div>
+								<br /> <br />
+								<div class="msg">{{message}}</div>
+								<div class="error">{{errorMessage}}</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+	<script src="/js/register.js" type="text/javascript"></script>
+
+</body>
+</html>

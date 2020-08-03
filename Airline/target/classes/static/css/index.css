@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #f5f8fa;
+}
+
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+
+.navbar-brand , .nav-link, .registerForm, .login-form, .searchFlighsForm
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.registerForm
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.registerForm .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
+.searchFlighsForm
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+   
+}
+
+.searchFlighsForm .row
+{
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
+
+
+
+.search-sec{
+    padding: 2rem;
+    
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+    
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+  
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        top: -114px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+    
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+    
+}
+
+
+.msg {
+	align-content: center;
+	color: green;
+	
+}
+
+.error {
+	align-content: center;
+	color: red;
+}
+
+.special-card {
+	background-color: rgba(245,245,245,1);
+	opacity: .75;
+	
+	}
+}

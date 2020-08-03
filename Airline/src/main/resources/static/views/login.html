@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Flight</title>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600"
+	rel="stylesheet" type="text/css">
+<link rel="icon" href="Favicon.png">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link href="/css/index.css" rel="stylesheet">
+
+<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-image: url("https://www.goindigo.in/content/dam/indigov2/6e-website/partner-login/Vand-Bharat-mission-SME-3.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-laravel ">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+			<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+			<link rel="icon" href="/favicon.ico" type="image/x-icon">
+			Flight</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link btn btn-aqua  col-lg-12"
+						href="/register">Register</a></li>
+						&nbsp;&nbsp;
+					<li class="nav-item"><a class="nav-link btn btn-aqua col-lg-12"
+						href="/login">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<br>
+
+	<main class="my-form">
+		<div class="container align-center col-sm-8" ng-app="loginApp"
+			ng-controller="loginController">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="card border-light card-transparent special-card">
+						<div class="card-header text-center border-light">Login</div>
+						<div class="card-body">
+							<form name="loginForm" method="post" action="/login">
+								<div class="form-group row">
+									<label for="userName"
+										class="col-md-4 col-form-label text-md-right">UserName</label>
+									<div class="col-md-6">
+										<input type="text" id="userName" class="form-control" ng-model="user.username"
+											name="userName">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="password"
+										class="col-md-4 col-form-label text-md-right">Password
+									</label>
+									<div class="col-md-6">
+										<input type="password" id="password" class="form-control" ng-model="user.password"
+											name="password">
+									</div>
+								</div>
+
+								<div class="col-md-4 offset-md-5">
+									<button type="button" class="btn btn-info btn-center wrn-btn" ng-click="login(user.username,user.password)">login</button>
+								</div>
+								
+								
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+	<script src="/js/login.js"></script>
+</body>
+</html>
