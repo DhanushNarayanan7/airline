@@ -9,7 +9,7 @@
 		<version>2.3.1.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.david.airline</groupId>
+	<groupId>com.dhanush.airline</groupId>
 	<artifactId>Airline</artifactId>
 	<version>1</version>
 	<name>demo</name>
