@@ -1,4 +1,4 @@
-package com.david.airline;
+package com.dhanush.airline;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
